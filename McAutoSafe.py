@@ -58,8 +58,8 @@ else:
 # 检查源路径是否存在
 if not os.path.exists(route):
     print(f"错误：源文件夹 '{route}' 不存在")
-    input("按Enter退出")
-    sys.exit(1)
+    route = input("输入存档路径 > ")
+    #sys.exit(1)
 
 save_path = "C:\\Users\\Administrator\\Desktop\\MCdownload\\%s\\%s"%(timestamp_to_datetime(time.time())[:10],time.time())
 create_directory("%s\\Java"%(save_path))
